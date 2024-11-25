@@ -1,12 +1,16 @@
-class BTree:
+"""
+Module to create a basic binary tree structure
+"""
+class BTree: # pylint: disable=too-few-public-methods
+    """
+    Module to create a basic binary tree structure
+    """
     def __init__(self, data) -> None:
-        self.data = data 
+        self.data = data
         self.left = None
         self.right = None
-        
-""""
-##### Create nodes ####
-"""
+
+
 root  = BTree("R")
 node1 = BTree("A")
 node2 = BTree("B")
@@ -16,7 +20,7 @@ node5 = BTree("E")
 node6 = BTree("G")
 
 """
-#### Create Binary tree by attaching the nodes
+Create Binary tree by attaching the nodes
 """
 root.left = node1
 root.right = node2
